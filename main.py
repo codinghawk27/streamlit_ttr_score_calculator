@@ -2,10 +2,9 @@
 """
 Created on 22/10/2022.
 
-@author: X
+@author: codinghawk27
 
-Description: Streamlit app to calculate the resulting TTR-Score after a
-tournament.
+Streamlit app to calculate the resulting TTR-Score after a tournament.
 """
 
 import streamlit as st
