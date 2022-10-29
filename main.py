@@ -71,8 +71,8 @@ def section_app_settings() -> None:
 def section_about() -> None:
     """Display the about section."""
     st.header("About :information_source:")
-    st.write("Erstellt von X")
-    st.write("Letzes Update: 27.10.2022")
+    st.write("Erstellt von codinghawk27")
+    st.write("Letzes Update: 29.10.2022")
 
 
 def section_calculator_tab(
