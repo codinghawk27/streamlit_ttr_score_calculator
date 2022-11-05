@@ -71,7 +71,7 @@ def section_about() -> None:
     """Display the about section."""
     st.header("About :information_source:")
     st.write("Erstellt von codinghawk27")
-    st.write("Letzes Update: 29.10.2022")
+    st.write("Letzes Update: 05.11.2022")
 
 
 def section_calculator_tab(
@@ -196,7 +196,7 @@ def section_one_match(
         match_number: int = 0
         ) -> None:
     """
-    User input section for one match of the torunament.
+    User input section for one match of the tournament.
 
     Parameters
     ----------
@@ -378,14 +378,12 @@ def section_match_ttr_table(
                            [match_id]
                            - st.session_state["current_ttr_score"]]})
 
-    # CSS to inject contained in a string
     hide_table_row_index = """
                 <style>
                     thead tr th:first-child {display:none}
                     tbody th {display:none}
                 </style>
                 """
-    # Inject CSS with Markdown
     st.markdown(hide_table_row_index, unsafe_allow_html=True)
 
     st.table(table)
@@ -464,7 +462,6 @@ def section_graphs_after_single(
         Indicates, whether this match was won. 1 if match was won,
         0 if match was lost. The default is 1.
     """
-    # Set theme
     if st.session_state["use_darkmode"]:
         plt.style.use("dark_background")
     else:
