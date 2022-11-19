@@ -15,6 +15,7 @@ import matplotlib.pyplot as plt
 def main() -> None:
     """Run the streamlit app."""
     initialize_session()
+    st.set_page_config(page_title="TTR-Rechner")
     st.title("TTR-Rechner :table_tennis_paddle_and_ball:")
     sidebar()
     calculator_tab, explanation_tab = st.tabs(["TTR-Rechner", "Erklärung"])
